@@ -1,8 +1,6 @@
-package com.example.konul.inventoryservice.response;
+package com.example.konul.bookingservice.response;
 
 import java.math.BigDecimal;
-
-import com.example.konul.inventoryservice.entity.Venue;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -10,13 +8,13 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@Builder
-@NoArgsConstructor
 @AllArgsConstructor
-public class EventInventoryResponse {
+@NoArgsConstructor
+@Builder
+public class InventoryResponse {
     private Long eventId;
     private String event;
     private Long capacity;
-    private Venue venue;
+    private VenueResponse venue;
     private BigDecimal ticket_price;
 }
